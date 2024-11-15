@@ -8,44 +8,44 @@
     <title>Bus Pass Management System</title>
 </head>
 
-<body class="bg-[#f4f4f4] m-0 p-0 flex justify-center items-center ">
-    <div class="container bg-white p-[20px] rounded-lg shadow w-full max-w-96">
+<body class="bg-[#f4f4f4]  bg-[url('photo1.png')] bg-cover bg-no-repeat bg-fixed m-0 p-0 flex justify-center items-center   ">
+    <div class="container bg-[#ffffffa9] p-[20px] rounded-lg shadow w-full max-w-96 m-5">
         <h1 class="text-center text-[#333] mb-[28px] text-[20px] md:text-[24px]">Apply for a New Bus Pass</h1>
-        <hr class="mb-4">
-        <form id="busPassForm" action="" method="">
+        <hr class="mb-4  ">
+        <form id="busPassForm" action="apply.php" method="post">
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="name">Full Name:</label>
+                <label class="block mb-[10px]  text-[#000000] text-[14px] md:text-[16px]" for="name">Full Name:</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px]  " type="text" id="name"
-                    name="name" required>
+                    name="name" placeholder="Full Name" required>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="dob">Date of Birth:</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="dob">Date of Birth:</label>
                 <input class="w-full py-1.5 px-2  border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px]  " type="date" id="dob" name="dob"
-                    required>
+                 required>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="address">Address:</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="address">Address:</label>
                 <textarea class="w-full py-1.5 px-2  border-2 border-[#ccc] rounded box-border resize-y " id="address"
-                    name="address" required></textarea>
+                    name="address" placeholder="Address" required></textarea>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="email">Email:</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="email">Email:</label>
                 <input class="w-full py-1.5 px-2  border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px]" type="email" id="email"
-                    name="email" required>
+                    name="email"  placeholder="Email" required>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="phone">Phone Number:</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="phone">Phone Number:</label>
                 <input class="w-full py-1.5 px-2  border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px]" type="tel" id="phone"
-                    name="phone" required>
+                    name="phone"  placeholder="Phone Number" required>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="phone">Stoppage:</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="phone">Stoppage:</label>
                 <input class="w-full py-1.5 px-2  border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px]" type="text" id="Stoppage"
-                    name="phone" required>
+                    name="Stoppage"  placeholder="Stoppage" required>
             </div>
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="photo">Upload Photo:</label>
-                <input class="w-full  py-1.5 px-2 border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px] text-[10px] md:text-[12px]" type="file" id="photo"
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="photo">Upload Photo:</label>
+                <input class="w-full  py-1.5 px-2 border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px] text-[10px] md:text-[12px] bg-white" type="file" id="photo"
                     name="photo" accept="image/*" required>
             </div>
             <!-- <div class="form-group">
@@ -53,8 +53,8 @@
                 <input type="file" id="idProof" name="idProof" accept="application/pdf,image/*" required>
             </div> -->
             <div class="form-group mb-[15px]">
-                <label class="block mb-[10px] text-[#666] text-[14px] md:text-[16px]" for="signature">Signature:</label>
-                <input class="w-full py-1.5 px-2 border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px] text-[10px] md:text-[12px]" type="file" id="signature"
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="signature">Signature:</label>
+                <input class="w-full py-1.5 px-2 border-2 border-[#ccc] rounded box-border  h-[35px] md:h-[40px] text-[10px] md:text-[12px] bg-white" type="file" id="signature"
                     name="signature" accept="application/pdf,image/*" required>
             </div>
 
