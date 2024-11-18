@@ -8,30 +8,30 @@
     <title>Bus Pass Renewal System</title>
 </head> 
 
-<body class="bg-[#f4f4f4]  bg-[url('photo3.png')] bg-cover bg-no-repeat bg-fixed p-0 m-0 flex justify-center items-center">
+<body class="bg-[#f4f4f4]  bg[url('photo3.png')] bg-cover bg-no-repeat bg-fixed p-0 m-0 flex justify-center items-center">
 
-    <div class="container bg-[#ffffffa9] p-5 rounded-lg shadow max-w-[400px] w-full m-5">
-        <h1 class="text-[#333] mb-5 text-[24px] text-center">Renew Bus Pass</h1>
+    <div class="container bg-[#ffffffa9] p-5 rounded-lg shadow max-w-[400px] w-full mx-3 my-5">
+        <h1 class="text-center text-[#0070c9] mb-[28px] text-[20px] md:text-[24px] lg:text-[26px] xl:text-[28px] 2xl:text-[30px] font-bold">Renew Bus Pass</h1>
         <hr class="mb-4">
         <form id="renew" action="/renew" method="POST">
-                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="name">Full Name :</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text[22px] font-bold" for="name">Full Name :</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px] mb-4 "
                     type="text" id="name" name="name" placeholder="Full Name " required>
 
-                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="email">Email :</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text[22px] font-bold" for="email">Email :</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px] mb-4 "
                     type="email" id="email" name="email" placeholder="Email" required>
 
-                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="dob">Date of Birth :</label>
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text[22px] font-bold" for="dob">Date of Birth :</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px] mb-4 "
                     type="date" id="dob" name="dob" required>
 
-                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="pass-number">Bus Pass
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text[22px] font-bold" for="pass-number">Bus Pass
                     Number :</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px] mb-4 "
                     type="text" id="pass-number" name="pass-number" placeholder="Bus Pass Number" required>
 
-                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px]" for="renewal-date">Renewal
+                <label class="block mb-[10px] text-[#000000] text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text[22px] font-bold" for="renewal-date">Renewal
                     Date :</label>
                 <input class="w-full  py-1.5 px-2  border-2 border-[#ccc] rounded box-border h-[35px] md:h-[40px] mb-4 "
                     type="date" id="renewal-date" name="renewal-date" required>
